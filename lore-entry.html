@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Legends of Eldryn | Lore Entry</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+</head>
+
+<body id="lentry-body">
+    <audio id="medievalFantasyMusic" src="media/medieval-fantasy.mp3" preload="auto" loop></audio>
+    <audio id="hoverSound" src="media/hover-sound.mp3" preload="auto"></audio>
+    <audio id="clickSound" src="media/click-sound.mp3" preload="auto"></audio>
+    <audio id="pageTurnSound" src="media/page-turn.mp3" preload="auto"></audio>
+
+    <button id="musicToggle" class="music-toggle">🎼</button>
+
+    <div class="back-arrow">
+        <a href="index.html">⮌</a>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+    </div>
+
+    <div class="smoke smoke1"></div>
+    <div class="smoke smoke2"></div>
+    <div class="smoke smoke3"></div>
+    <div class="smoke smoke4"></div>
+    <div class="smoke smoke5"></div>
+    <div class="smoke smoke6"></div>
+
+    <video class="fireplace" autoplay muted loop playsinline>
+        <source src="media/fireplace.mp4" type="video/mp4" />
+    </video>
+
+    <h1 class="lore-title">Lore Entry</h1><br>
+
+    <img src="media/closed-book.png" id="closedBook" alt="Closed Book" class="closed-book">
+
+
+    <div class="book-container" style="display: none;">
+        <div class="page-nav"></div>
+            <div class="book-page left-page" id="leftPage"></div>
+            <div class="book-page right-page" id="rightPage"></div>
+
+        <div class="nav-left">
+            <span class="arrow" onclick="prevPage()">⮜</span>
+        </div>
+        <div class="nav-right">
+            <span class="arrow" onclick="nextPage()">⮞</span>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

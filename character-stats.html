@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Legends of Eldryn | Character Stats</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+</head>
+
+    <body id="cstats-body" style="background-image: url('media/character-stats-bg.png'); background-size: cover; background-position: center;">
+        <audio id="hoverSound" src="media/hover-sound.mp3" preload="auto"></audio>
+        <audio id="clickSound" src="media/click-sound.mp3" preload="auto"></audio>
+        <audio id="kingdomMusic" src="media/kingdom-music.mp3" preload="auto" loop></audio>
+        
+        <button id="musicToggle" class="music-toggle">🎼</button>
+
+        <div class="back-arrow">
+            <a href="index.html">⮌</a>
+            <div class="arrow-firework"></div>
+            <div class="arrow-firework"></div>
+            <div class="arrow-firework"></div>
+            <div class="arrow-firework"></div>
+            <div class="arrow-firework"></div>
+            <div class="arrow-firework"></div>
+            <div class="arrow-firework"></div>
+            <div class="arrow-firework"></div>
+            <div class="arrow-firework"></div>
+            <div class="arrow-firework"></div>
+        </div>
+    
+        <div class="firefly-bg-effect"></div>
+        <div class="firefly-bg-effect"></div>
+        <div class="firefly-bg-effect"></div>
+
+        <div class="character-wrapper">
+            <header class="entry-header">
+            <h1>🧝 Character Statistics</h1>
+            </header>
+
+            <nav>
+                <ul style="display: flex; justify-content: center; gap: 2rem; padding: 0; list-style: none;">
+                    <li><a href="inventory.html" class="sheer-button">Inventory</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="load-summary">
+                    These are the attributes that define your strength, cunning, and magical might. Let no stat lie forgotten — for every point marks a tale.
+                </div>
+                <hr>
+            </main>
+
+            <div class="stats-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; justify-items: center; max-width: 960px; margin: 0 auto;">
+                <div class="stat-row">
+                    <div class="stat-name">💪 Strength</div>
+                    <div class="stat-description">
+                    <div class="progress-bar"><div class="progress" style="width: 72%"></div></div>
+                        <div class="stat-description">Determines physical power and weapon damage.</div>
+                    </div>
+                </div>
+                    
+                <div class="stat-row">
+                    <div class="stat-name">⚡ Agility</div>
+                    <div class="stat-description">
+                    <div class="progress-bar"><div class="progress" style="width: 48%"></div></div>
+                        <div class="stat-description">Controls your speed, dodge, and reflex actions.</div>
+                    </div>
+                </div>
+                    
+                <div class="stat-row">
+                    <div class="stat-name">🧠 Intelligence</div>
+                    <div class="stat-description">
+                    <div class="progress-bar"><div class="progress" style="width: 76%"></div></div>
+                        <div class="stat-description">Governs spell knowledge and artifact use.</div>
+                    </div>
+                </div>
+                    
+                <div class="stat-row">
+                    <div class="stat-name">🎯 Dexterity</div>
+                    <div class="stat-description">
+                    <div class="progress-bar"><div class="progress" style="width: 40%"></div></div>
+                        <div class="stat-description">Influences precision, aim, and critical hit chance.</div>
+                    </div>
+                </div>
+                    
+                <div class="stat-row">
+                    <div class="stat-name">🔮 Magic</div>
+                    <div class="stat-description">
+                    <div class="progress-bar"><div class="progress" style="width: 18%"></div></div>
+                        <div class="stat-description">Reflects arcane prowess and mana reserves.</div>
+                    </div>
+                </div>
+
+                <div class="stat-row">
+                    <div class="stat-name">🛡️ Defense</div>
+                    <div class="stat-description">
+                    <div class="progress-bar"><div class="progress" style="width: 64%"></div></div>
+                        <div class="stat-description">Reduces incoming damage and boosts resistance.</div>
+                    </div>
+                </div>
+                    
+                <div class="stat-row">
+                    <div class="stat-name">🗣️ Charisma</div>
+                    <div class="stat-description">
+                    <div class="progress-bar"><div class="progress" style="width: 59%"></div></div>
+                        <div class="stat-description">Persuades, deceives, and charms others more easily.</div>
+                    </div>
+                </div>
+                
+                <div class="stat-row">
+                    <div class="stat-name">🎖️ Morale</div>
+                    <div class="stat-description">
+                    <div class="progress-bar"><div class="progress" style="width: 56%"></div></div>
+                        <div class="stat-description">Emboldens willpower, tenacity, and battlefield spirit.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+
+    </body>
+</html>

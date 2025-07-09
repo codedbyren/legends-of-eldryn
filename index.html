@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Legends of Eldryn | Main Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<body id="menu-body">
+  <audio id="travelerMusic" src="media/traveler-music.mp3" preload="auto" loop></audio>
+  <audio id="hoverSound" src="media/hover-sound.mp3" preload="auto"></audio>
+  <audio id="clickSound" src="media/click-sound.mp3" preload="auto"></audio>
+  <audio id="noClickSound" src="media/unclickable.mp3" preload="auto"></audio>
+
+  <button id="musicToggle" class="music-toggle">🎼</button>
+
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
+  <div class="cloud cloud4"></div>
+  <div class="cloud cloud5"></div>
+  <div class="cloud cloud6"></div>
+  <div class="cloud cloud7"></div>
+  <div class="cloud cloud8"></div>
+  <div class="cloud cloud9"></div>
+
+  <div id="menu-scroll">
+    <header>
+      <h1>🛡️ Legends of Eldryn</h1>
+    </header>
+    <br>
+
+    <main>
+      <h2 id="mySpecialTitle">
+        <span class="emoji-compass">🧭
+          <span class="original-firefly-one"></span>
+          <span class="original-firefly-two"></span>
+        </span>
+        <span "shiny-text" id="mySpecialTitle" class="shiny-text">Main Menu</span>
+      </h2>
+      <br>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="#" id="newGameBtn" class="menu-button non-clickable">🚪 New Game</a></li>
+          <li><a href="#" id="loadWorldBtn" class="menu-button non-clickable">🏰 Load World</a></li>
+          <li><a href="lore-entry.html" class="menu-button">📜 Enter Lore</a></li>
+          <li><a href="character-stats.html" id="loadCharacterBtn" class="menu-button">🧝 Load Character</a></li>
+          <li><a href="inventory.html" class="menu-button">🎒 View Inventory</a></li>
+        </ul>
+      </nav>
+
+    </main>
+
+  </div>
+  
+  <script src="scripts.js"></script>
+
+</body>
+</html>

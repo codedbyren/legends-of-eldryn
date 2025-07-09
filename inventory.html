@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Legends of Eldryn | Inventory</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+</head>
+
+<body id="inv-body">
+    <audio id="harpNstringsMusic" src="media/harp-n-strings.mp3" preload="auto" loop></audio>
+    <audio id="hoverSound" src="media/hover-sound.mp3" preload="auto"></audio>
+    <audio id="clickSound" src="media/click-sound.mp3" preload="auto"></audio>
+    <audio id="pageTurnSound" src="media/page-turn.mp3" preload="auto"></audio>
+
+    <button id="musicToggle" class="music-toggle">🎼</button>
+
+    <div class="back-arrow">
+        <a href="index.html">⮌</a>
+    </div>
+    
+    <div class="back-arrow">
+        <a href="index.html">⮌</a>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+        <div class="arrow-firework"></div>
+    </div>
+
+    <div class="sun-rays-container">
+        <div class="sun-beam" style="top:57%; left:60%; animation-delay:0s;"></div>
+        <div class="sun-beam" style="top:78%; left:63%; animation-delay:2s;"></div>
+        <div class="sun-beam" style="top:67%; left:60%; animation-delay:4s;"></div>
+        <div class="sun-beam" style="top:75%; left:61%; animation-delay:1s;"></div>
+        <div class="sun-beam bottom-beam" style="top:79%; left:61%; animation-delay:3s;"></div></div>
+        <div class="sun-beam bottom-beam" style="top:76%; left:62%; animation-delay:2s;"></div></div>
+        <div class="sun-beam bottom-beam" style="top:75%; left:65%; animation-delay:2s;"></div></div> <!-- top: the the higher the number, the closer to the BOTTOM; left: the higher the number, the closer to the RIGHT -->
+        <div class="sun-beam1" style="top:76%; left:59%; animation-delay:3s;"></div>
+        <div class="sun-beam2" style="top:80%; left:60%; animation-delay:1s;"></div>
+        <div class="sun-beam3" style="top:84%; left:58%; animation-delay:4s;"></div>
+    </div>
+
+    <div class="sparkle" style="right:20%; bottom:45%; animation-delay: 0s;"></div>
+    <div class="sparkle" style="right:17%; bottom:36%; animation-delay: 2s;"></div>
+    <div class="sparkle" style="right:26%; bottom:48%; animation-delay: 1s;"></div>
+    <div class="sparkle" style="right:22%; bottom:25%; animation-delay: 3s;"></div>
+    <div class="sparkle" style="right:18%; bottom:60%; animation-delay: 4s;"></div>
+
+    <video class="candle-vid" autoplay loop muted playsinline>
+        <source src="media/candle-burn.mp4" type="video/mp4">
+    </video>
+
+    <div id="inv-scroll">
+        <header>
+            <h1>🎒 Inventory</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="character-stats.html" class="sheer-button">Character Stats</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <br>
+            Behold the tools, trinkets, and cursed snacks gathered throughout my travels. Each item holds a tale — some glorious, others… mildly regrettable.
+            <br>
+            A weathered satchel rests at your side. Inside: relics of past battles, enchanted curiosities, and a suspiciously squishy loaf of bread.
+            <br>
+            <hr>
+        </main>
+
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab active" data-tab="items">📦 Items</button>
+                <button class="tab" data-tab="provisions">🥖 Provisions</button>
+                <button class="tab" data-tab="potions">⚗️ Potions</button>
+                <button class="tab" data-tab="weapons">⚔️ Weapons</button>
+                <button class="tab" data-tab="armor">🛡️ Armor</button>
+            </div>
+
+            <div class="tab-content active" id="items">
+                <div class="inventory-grid">
+                    <!-- 🍷 Elven Wine -->
+                    <div class="item-card">
+                        <img src="media/wine.png" alt="Bottle of Wine">
+                        <div class="item-name">🍷 Elven Wine — Vintage of Glee</div>
+                        <div class="item-stats">
+                            <ul>
+                                <li>🌀 Altered Perception<br>(−5 Dexterity, +5 Mana)</li>
+                                <li>🎭 Mood Surge<br>(+10 Mood)</li>
+                                <li>💤 Drowsy Glow<br>(−6 Energy)</li>
+                                <li>🧠 Fog of Wine<br>(-10 Intelligence)</li>
+                                <li>🦵 Staggered Steps<br>(-8 Dexterity)</li>
+                                <li>🗣️ Presence<br>(+10 Charisma)</li>
+                                <hr>
+                                <li><strong>📊 Total Effects:</strong><br>
+                                    −13 Dexterity, +5 Mana, +10 Mood,<br>
+                                    −6 Energy, −10 Intelligence, +10 Charisma
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 🪨 Apprentice Mortar & Pestle -->
+                    <div class="item-card">
+                        <img src="media/apprentice-mortar.png" alt="Mortar & Pestle">
+                        <div class="item-name">🪨 Apprentice — Cracked Basin</div>
+                        <div class="item-stats">
+                            <ul>
+                                <li>🌿 Clumsy Grinding<br>(+4 Alchemy)</li>
+                                <li>🧪 Uneven Mix<br>(+2 Potency)</li>
+                                <hr>
+                                <li><strong>📊 Total Effects:</strong><br>
+                                    +4 Alchemy, +2 Potency
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 🧫 Master Mortar & Pestle -->
+                    <div class="item-card">
+                        <img src="media/master-mortar.png" alt="Mortar & Pestle">
+                        <div class="item-name">🧫 Master — Whisperstone</div>
+                        <div class="item-stats">
+                            <ul>
+                                <li>🧠 Perfect Infusion<br>(+12 Alchemy)</li>
+                                <li>🔮 Essence Harmony<br>(+15 Potency)</li>
+                                <li>🕯 Arcane Hum<br>(+2 Mystery)</li>
+                                <li>🕯 Arcane Resonance<br>(+2 Magic)</li>
+                                <hr>
+                                <li><strong>📊 Total Effects:</strong><br>
+                                    +12 Alchemy, +15 Potency, +2 Mystery, +2 Mana
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tab-content" id="provisions">
+                <div class="inventory-grid">
+                    <div class="item-card">
+                        <img src="media/bread.png" alt="Stale Bread">
+                        <div class="item-name">🥖 Crumb of Shame</div>
+                        <div class="item-stats">
+                            <ul>
+                                <li>🫃 Gut Load<br>(+2 Fullness)</li>
+                                <li>🥱 Loss of Will<br>(-1 Morale)</li>
+                                <li>🤢 Mild Food Poisoning<br>(+1 Sickness)</li>
+                                <hr>
+                                <li><strong>📊 Total Effects:</strong><br>
+                                    +2 Fullness, −1 Morale, +1 Sickness
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+
+            </div>
+
+            <div class="tab-content" id="potions">
+                <div class="inventory-grid">
+                    <!-- 🧪 Healing Potion -->
+                    <div class="item-card">
+                        <img src="media/healing-potion.png" alt="Health Potion">
+                        <div class="item-name">🧪 Healing Brew — Crimson Elixir</div>
+                        <div class="item-stats">
+                            <ul>
+                                <li>❤️ Vital Surge<br>(+30 Health)</li>
+                                <li>🛡 Warmth Within<br>(+5 Morale)</li>
+                                <li>🌬 Breath of Vitality (+8 Energy)</li>
+                                <hr>
+                                <li><strong>📊 Total effects:</strong><br>
+                                    +30 Health, +5 Morale, +8 Energy
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 🌌 Mana Potion -->
+                    <div class="item-card">
+                        <img src="media/mana-potion.png" alt="Mana Potion">
+                        <div class="item-name">🌌 Arcane Draught — Azure Whisper</div>
+                        <div class="item-stats">
+                            <ul>
+                                <li>🔮 Magic Replenish<br>(+25 Mana)</li>
+                                <li>🌒 Lunar Sight<br>(10s Night vision)</li>
+                                <hr>
+                                <li><strong>📊 Total Effects:</strong><br>
+                                    +25 Mana, 10s Night vision
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tab-content" id="weapons">
+                <div class="inventory-grid">
+                    <!-- 🗡️ Dagger of Shadows -->
+                    <div class="item-card">
+                        <img src="media/dagger.png" alt="Dagger">
+                        <div class="item-name">🗡️ Dagger of Shadows — Nightpiercer</div>
+                        <div class="item-stats">
+                            <ul>
+                                <li>🔪 Stealth Strike<br>(+12 Stealth)</li>
+                                <li>👁 Shadowmeld<br>(+8 Invisibility)</li>
+                                <li>⚖️ Encumbered Step<br>(−1 Agility)</li>
+                                <hr>
+                                <li><strong>📊 Total Effects:</strong><br>
+                                    +12 Stealth, +8 Invisibility, −8 Agility
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ⚔️ Greatsword of Valor -->
+                    <div class="item-card">
+                        <img src="media/greatsword.png" alt="Sword">
+                        <div class="item-name">⚔️ Greatsword of Valor — Titan's Roar</div>
+                        <div class="item-stats">
+                            <ul>
+                            <li>💪 Cleave<br>(+20 Strength)</li>
+                            <li>🦴 Weighted Grip<br>(−2 Dexterity)</li>
+                            <li>😬 Heavy Burden<br>(-7 Agility)</li>
+                            <hr>
+                            <li><strong>📊 Total Effects:</strong><br>
+                                +20 Strength, -2 Dexterity, −7 Agility
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tab-content" id="armor">
+                <div class="inventory-grid">
+                    <!-- 🧤 Gloves of Swiftness -->
+                    <div class="item-card">
+                        <img src="media/gloves.png" alt="Gloves">
+                        <div class="item-name">🧤 Gloves of Swiftness — Whispergrip</div>
+                        <div class="item-stats">
+                            <ul>
+                                <li>🌀 Quickstep<br>(+18 Agility)</li>
+                                <li>🧱 Brittle Weave<br>(−4 Defense)</li>
+                                <li>🫳 Reduced Grip<br>(-5 Strength)</li>
+                                <hr>
+                                <li><strong>📊 Total Effects:</strong><br>
+                                    +18 Agility, -4 Defense, −5 Strength
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="scripts.js"></script>
+
+</body>
+</html>
