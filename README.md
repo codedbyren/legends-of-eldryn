@@ -60,7 +60,7 @@ Just open `index.html` in your browser.
 ---
 
 ## ✍️ Made by
-🐙 GitHub: @codedbyren (https://github.com/codedbyren)
+🐙 GitHub: @codedbyren (https://github.com/codedbyren)  
 📧 Email: 153126216+codedbyren@users.noreply.github.com
 
 ---
