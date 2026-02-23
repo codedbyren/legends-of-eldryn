@@ -48,8 +48,7 @@ It’s purely visual — not an actual game — designed to experiment with DOM 
 ---
 
 ## 📜 Notes
-- No license 🚫
-- This is purely a visual / UI simulation — it doesn’t store data or run actual game logic.
+- This is an UI simulation — it doesn’t store data or run actual game logic.
 - All images, textures, and sounds are either free-use assets or created for personal use.
 
 ---
@@ -64,3 +63,7 @@ Just open `index.html` in your browser.
 📧 Email: 153126216+codedbyren@users.noreply.github.com
 
 ---
+
+## ⚖️ License
+© 2025 codedbyren. All Rights Reserved.
+See LICENSE file for details.
